@@ -63,6 +63,7 @@ def play(game, x_player, o_player, print_game=True):
     while game.empty_squares():
         if letter == 'O':
             square = o_player.get_move(game)
+            
         else:
             square = x_player.get_move(game)
         if game.make_move(square, letter):
